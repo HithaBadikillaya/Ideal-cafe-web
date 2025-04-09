@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chocobar Ice Cream
+* source:	https://sketchfab.com/3d-models/chocobar-ice-cream-71860e4b13a9412ba3e0032e87e29f23
+* author:	Mohan Ramtirth (https://sketchfab.com/mohanramtirth)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chocobar Ice Cream" (https://sketchfab.com/3d-models/chocobar-ice-cream-71860e4b13a9412ba3e0032e87e29f23) by Mohan Ramtirth (https://sketchfab.com/mohanramtirth) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
