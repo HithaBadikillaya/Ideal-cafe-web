@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
 body {
-  background: #f6f5f7;
+  background:#F5E3E2;
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: 0;
@@ -11,9 +11,9 @@ body {
 }
 
 .container-box {
-  background: #fff;
+  background:#EE8466;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+  box-shadow: 0 14px 28px rgba(195, 94, 94, 0.25),
               0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
@@ -75,7 +75,7 @@ body {
 }
 
 .overlay {
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #e24ae2, #E24A2E);
   color: #ffffff;
   position: relative;
   left: -100%;

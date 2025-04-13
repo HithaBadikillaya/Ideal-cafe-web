@@ -1,9 +1,9 @@
 
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
+import "../styles.css";
 
-export default function App() {
+export default function Login() {
   const [signIn, setSignIn] = useState(true);
 
   return (
