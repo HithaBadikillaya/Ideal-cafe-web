@@ -6,7 +6,7 @@ Ideal Cafe is a responsive, frontend-only web application that allows users to e
 
 - **User Authentication 🔐:**  
   - Sign-up and login functionality (credentials stored in localStorage for simulation).  
-  - Admin login (use `admin` / `admin123`).
+  - Admin login (use `admin@gmail.com` / `admin123`).
 
 - **Home Page 🏠:**  
   - Engaging carousel and hero banner.
@@ -16,7 +16,7 @@ Ideal Cafe is a responsive, frontend-only web application that allows users to e
   - Categorized menu with filtering and sorting.
   - Global cart management using React Context API.
 
-- **Admin Dashboard 📊:**  creds:  [admin@gmail.com , admin@123]
+- **Admin Dashboard 📊:** 
   - Form to add new menu items (mock data).  
   - Table view of existing items and mock sales analytics.  
   - Logout functionality.
