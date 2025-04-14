@@ -16,7 +16,7 @@ Ideal Cafe is a responsive, frontend-only web application that allows users to e
   - Categorized menu with filtering and sorting.
   - Global cart management using React Context API.
 
-- **Admin Dashboard 📊:**  
+- **Admin Dashboard 📊:**  creds:  [admin@gmail.com , admin@123]
   - Form to add new menu items (mock data).  
   - Table view of existing items and mock sales analytics.  
   - Logout functionality.
