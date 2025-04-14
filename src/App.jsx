@@ -1,6 +1,20 @@
 import React from "react";
-import Login from "./pages/login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Specialoffer from "./pages/Specialoffer";
+import Footer from "./pages/Footer";
 
-export default function App() {
-  return <Login />;
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Specialoffer />} />
+        
+      </Routes>
+      
+      
+      <Footer />
+    </Router>
+  );
 }
+
+export default App;
