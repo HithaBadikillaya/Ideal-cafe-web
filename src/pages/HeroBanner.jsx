@@ -2,16 +2,15 @@ import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import * as THREE from 'three';
+
 
 function Model() {
   const { scene } = useGLTF('/assets/scene.gltf');
   useFrame(() => {
-    scene.rotation.z += 0.005;
     scene.rotation.y -= 0.005;
     
   });
-  return <primitive object={scene} scale={1} />;
+  return <primitive object={scene} scale={2} />;
 }
 
 export default function HeroBanner() {
