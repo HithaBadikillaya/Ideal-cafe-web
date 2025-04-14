@@ -6,8 +6,9 @@ import Login from './pages/login';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
-import { CartProvider } from './components/CartContext';
 import AboutUs from './pages/AboutUs';
+import AdminDashboard from './pages/AdminDashboard'; // Import the Admin Dashboard
+import { CartProvider } from './components/CartContext';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/admin" element={<AdminDashboard />} />  {/* New admin route */}
         </Routes>
       </Router>
     </CartProvider>

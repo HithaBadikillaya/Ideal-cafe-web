@@ -40,7 +40,7 @@ export default function Login() {
     setSignUpError("");
     alert("Sign Up Successful! Please sign in.");
     
-    // Clear sign up fields (optional) and switch to sign in view
+    // Clear sign up fields and switch to sign in view
     setSignUpName("");
     setSignUpEmail("");
     setSignUpPassword("");
@@ -50,6 +50,13 @@ export default function Login() {
   // Handle Sign In submission
   const handleSignIn = (e) => {
     e.preventDefault();
+    
+    // Admin credentials check (adjust these values as needed)
+    if (signInEmail === "admin@gmail.com" && signInPassword === "admin123") {
+      // Successful admin login: redirect to the Admin Dashboard
+      window.location.href = "/admin";
+      return;
+    }
     
     // Retrieve user data from localStorage
     const storedUser = JSON.parse(localStorage.getItem("user"));
@@ -69,80 +76,83 @@ export default function Login() {
   };
 
   return (
-    <div className={`container-box ${signIn ? "" : "right-panel-active"}`}>
-      <div className="form-container sign-up-container">
-        <form onSubmit={handleSignUp}>
-          <h1>Create Account</h1>
-          {signUpError && <p className="text-danger">{signUpError}</p>}
-          <input
-            className="form-control mb-2"
-            type="text"
-            placeholder="Name"
-            value={signUpName}
-            onChange={(e) => setSignUpName(e.target.value)}
-          />
-          <input
-            className="form-control mb-2"
-            type="email"
-            placeholder="Email"
-            value={signUpEmail}
-            onChange={(e) => setSignUpEmail(e.target.value)}
-          />
-          <input
-            className="form-control mb-2"
-            type="password"
-            placeholder="Password"
-            value={signUpPassword}
-            onChange={(e) => setSignUpPassword(e.target.value)}
-          />
-          <button className="btn btn-danger mt-3" type="submit">
-            Sign Up
-          </button>
-        </form>
-      </div>
-
-      <div className="form-container sign-in-container">
-        <form onSubmit={handleSignIn}>
-          <h1>Sign in</h1>
-          {signInError && <p className="text-danger">{signInError}</p>}
-          <input
-            className="form-control mb-2"
-            type="email"
-            placeholder="Email"
-            value={signInEmail}
-            onChange={(e) => setSignInEmail(e.target.value)}
-          />
-          <input
-            className="form-control mb-2"
-            type="password"
-            placeholder="Password"
-            value={signInPassword}
-            onChange={(e) => setSignInPassword(e.target.value)}
-          />
-          <a href="#" className="text-muted my-2">
-            Forgot your password?
-          </a>
-          <button className="btn btn-danger mt-3" type="submit">
-            Sign In
-          </button>
-        </form>
-      </div>
-
-      <div className="overlay-container">
-        <div className="overlay">
-          <div className="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>To keep connected with us please login with your personal info</p>
-            <button className="btn btn-outline-light mt-3" onClick={() => setSignIn(true)}>
-              Sign In
-            </button>
-          </div>
-          <div className="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start your journey with us</p>
-            <button className="btn btn-outline-light mt-3" onClick={() => setSignIn(false)}>
+    // Center the login form vertically and horizontally using Bootstrap utility classes.
+    <div className="d-flex vh-100 align-items-center justify-content-center">
+      <div className={`container-box ${signIn ? "" : "right-panel-active"}`}>
+        <div className="form-container sign-up-container">
+          <form onSubmit={handleSignUp}>
+            <h1>Create Account</h1>
+            {signUpError && <p className="text-danger">{signUpError}</p>}
+            <input
+              className="form-control mb-2"
+              type="text"
+              placeholder="Name"
+              value={signUpName}
+              onChange={(e) => setSignUpName(e.target.value)}
+            />
+            <input
+              className="form-control mb-2"
+              type="email"
+              placeholder="Email"
+              value={signUpEmail}
+              onChange={(e) => setSignUpEmail(e.target.value)}
+            />
+            <input
+              className="form-control mb-2"
+              type="password"
+              placeholder="Password"
+              value={signUpPassword}
+              onChange={(e) => setSignUpPassword(e.target.value)}
+            />
+            <button className="btn btn-danger mt-3" type="submit">
               Sign Up
             </button>
+          </form>
+        </div>
+
+        <div className="form-container sign-in-container">
+          <form onSubmit={handleSignIn}>
+            <h1>Sign in</h1>
+            {signInError && <p className="text-danger">{signInError}</p>}
+            <input
+              className="form-control mb-2"
+              type="email"
+              placeholder="Email"
+              value={signInEmail}
+              onChange={(e) => setSignInEmail(e.target.value)}
+            />
+            <input
+              className="form-control mb-2"
+              type="password"
+              placeholder="Password"
+              value={signInPassword}
+              onChange={(e) => setSignInPassword(e.target.value)}
+            />
+            <a href="#" className="text-muted my-2">
+              Forgot your password?
+            </a>
+            <button className="btn btn-danger mt-3" type="submit">
+              Sign In
+            </button>
+          </form>
+        </div>
+
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button className="btn btn-outline-light mt-3" onClick={() => setSignIn(true)}>
+                Sign In
+              </button>
+            </div>
+            <div className="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start your journey with us</p>
+              <button className="btn btn-outline-light mt-3" onClick={() => setSignIn(false)}>
+                Sign Up
+              </button>
+            </div>
           </div>
         </div>
       </div>

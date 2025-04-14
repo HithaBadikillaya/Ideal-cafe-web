@@ -8,6 +8,7 @@ import { useCart } from '../components/CartContext'; // ✅ Import context
 import Specialoffer from './Specialoffer';
 import Footer from './Footer';
 
+
 export default function Home() {
   const { addToCart, cartItems } = useCart(); // ✅ Use global cart
 
@@ -15,6 +16,7 @@ export default function Home() {
     <div>
       <div className="container-fluid my-5 px-0 px-md-3">
         <AppNavbar cartCount={cartItems.length} />
+
 
         {/* Carousel Section */}
         <Carousel />

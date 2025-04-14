@@ -61,17 +61,17 @@ export default function Carousel() {
           <div className="carousel-item">
             <div className="d-flex justify-content-center">
               <img
-                src="/images/icecream2.png"
+                src="/images/icecream2.jpg"
                 className="img-fluid d-block"
                 alt="Butterscotch Paradise"
                 style={{ maxHeight: '300px', maxWidth: '100%', objectFit: 'contain' }}
               />
             </div>
             <div className="text-center mt-3">
-              <h5>Butterscotch Paradise</h5>
+              <h5>Bella Camdy</h5>
               <p>
-                Dive into decadence with our Butterscotch Paradise—a symphony of bold, bittersweet
-                Belgian Butterscotch fused with a luscious fudge ganache.
+                Dive into decadence with our candy Paradise—a symphony of bold, bittersweet
+                Belgian candy fused with a luscious fudge ganache.
               </p>
             </div>
           </div>
@@ -87,11 +87,11 @@ export default function Carousel() {
               />
             </div>
             <div className="text-center mt-3">
-              <h5>Award-Winning Strawberry Bliss</h5>
+              <h5>Achievements</h5>
               <p>
-                Experience the burst of natural strawberry flavor blended with a creamy twist—a treat
-                for every dessert lover.
-              </p>
+                Our ice creams have won numerous awards for their exceptional taste and quality,
+                including the prestigious Golden Scoop Award for Best Ice Cream in 2023.
+                </p>
             </div>
           </div>
         </div>
