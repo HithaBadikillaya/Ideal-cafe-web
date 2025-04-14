@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import AppNavbar from '../components/Navbar';
 import iceCreamData from '../components/IcecreamData';
 import { useCart } from '../components/CartContext'; // Import useCart hook
+import Footer from './Footer';
 
 // Reusable Card Component
 const IceCreamCard = ({ item, addToCart }) => (
@@ -125,6 +126,7 @@ function Menu() {
           </div>
         ))}
       </Container>
+      <Footer/>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import Testimonial from '../components/Testimonial';
 import PopularDishes from '../components/PopularDishes';
 import AppNavbar from '../components/Navbar';
 import { useCart } from '../components/CartContext'; // ✅ Import context
+import Specialoffer from './Specialoffer';
+import Footer from './Footer';
 
 export default function Home() {
   const { addToCart, cartItems } = useCart(); // ✅ Use global cart
@@ -25,8 +27,10 @@ export default function Home() {
           <HeroBanner /><br />
           <PopularDishes addToCart={addToCart} />
           <Testimonial />
+          <Specialoffer/>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

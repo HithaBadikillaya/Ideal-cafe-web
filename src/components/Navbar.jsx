@@ -37,7 +37,7 @@ const AppNavbar = ({ cartCount }) => {
           className="fw-bold d-flex align-items-center text-white ms-3 me-5"
         >
           <img
-            src="/images/logo.jpg"
+            src="/images/image.png"
             alt="Logo"
             width="190"
             height="90"

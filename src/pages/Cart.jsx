@@ -126,6 +126,7 @@ export default function Cart() {
           </Modal.Footer>
         </Modal>
       </Container>
+    
     </div>
   );
 }
