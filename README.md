@@ -1,12 +1,40 @@
-# React + Vite
+# Ideal Cafe ☕🍰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ideal Cafe is a responsive, frontend-only web application that allows users to explore a delicious cafe menu, add items to a global cart, and experience a polished UI with user and admin authentication. The professional Admin Dashboard provides a simple interface for managing menu items and viewing mock sales analytics.
 
-Currently, two official plugins are available:
+## ⭐ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication 🔐:**  
+  - Sign-up and login functionality (credentials stored in localStorage for simulation).  
+  - Admin login (use `admin` / `admin123`).
 
-## Expanding the ESLint configuration
+- **Home Page 🏠:**  
+  - Engaging carousel and hero banner.
+  - Sections showcasing popular dishes, testimonials, and special offers.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Menu & Cart 🍽️🛒:**  
+  - Categorized menu with filtering and sorting.
+  - Global cart management using React Context API.
+
+- **Admin Dashboard 📊:**  
+  - Form to add new menu items (mock data).  
+  - Table view of existing items and mock sales analytics.  
+  - Logout functionality.
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/ideal-cafe.git
+   cd ideal-cafe
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   
+3. **Run the app:**
+
+   ```bash
+   npm run dev
