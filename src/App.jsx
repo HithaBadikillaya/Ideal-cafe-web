@@ -1,19 +1,25 @@
-import React from "react";
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Carousel from "./pages/Carousel";
-import HeroBanner from "./pages/HeroBanner";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Login from './pages/login';
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import Cart from './pages/Cart';
+import { CartProvider } from './components/CartContext';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Carousel />} />
-        <Route path="/b" element={<HeroBanner />} />
-        
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

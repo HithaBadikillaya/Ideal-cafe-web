@@ -37,7 +37,7 @@ export default function HeroBanner() {
             <p className="lead my-4">
               Indulge in irresistible flavors crafted with premium ingredients. Experience the perfect blend of taste and innovation with every scoop.
             </p>
-            <a href="#menu" className="btn btn-primary btn-lg">Explore the Menu</a>
+            <a href="/menu" className="btn btn-primary btn-lg">Explore the Menu</a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
             <div style={{ width: '640px', height: '480px' }}>
